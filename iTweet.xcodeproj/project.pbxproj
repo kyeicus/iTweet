@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91019583283EFD6400627E41 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91019582283EFD6400627E41 /* SideMenuView.swift */; };
+		91019585283EFD7C00627E41 /* SideMenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91019584283EFD7C00627E41 /* SideMenuRowView.swift */; };
+		91019587283EFD8800627E41 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91019586283EFD8800627E41 /* SideMenuViewModel.swift */; };
+		91BF12CB283F0349002E3CCA /* UserStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BF12CA283F0349002E3CCA /* UserStatsView.swift */; };
+		91BF12CD283F0C73002E3CCA /* SideMenuOptionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BF12CC283F0C73002E3CCA /* SideMenuOptionRowView.swift */; };
+		91BF12D2283F1BCE002E3CCA /* NewTweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BF12D1283F1BCE002E3CCA /* NewTweetView.swift */; };
+		91BF12D4283F1E31002E3CCA /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BF12D3283F1E31002E3CCA /* TextArea.swift */; };
+		91BF12D9283F2581002E3CCA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BF12D8283F2581002E3CCA /* LoginView.swift */; };
+		91BF12DB283F258D002E3CCA /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BF12DA283F258D002E3CCA /* RegistrationView.swift */; };
+		91BF12DD283F2746002E3CCA /* RoundedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BF12DC283F2746002E3CCA /* RoundedShape.swift */; };
+		91BF12DF283F3321002E3CCA /* CustomInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BF12DE283F3321002E3CCA /* CustomInputField.swift */; };
 		91DE131E28297F20002302B9 /* iTweetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE131D28297F20002302B9 /* iTweetApp.swift */; };
 		91DE132028297F20002302B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE131F28297F20002302B9 /* ContentView.swift */; };
 		91DE132228297F21002302B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91DE132128297F21002302B9 /* Assets.xcassets */; };
@@ -19,9 +30,22 @@
 		91DE134928298A9E002302B9 /* MessagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE134828298A9E002302B9 /* MessagesView.swift */; };
 		91DE134D28298D29002302B9 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE134C28298D29002302B9 /* ProfileView.swift */; };
 		91DE134F2829A2D5002302B9 /* TweetFilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE134E2829A2D5002302B9 /* TweetFilterViewModel.swift */; };
+		91DE1354282DD20A002302B9 /* UserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE1353282DD20A002302B9 /* UserRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		91019582283EFD6400627E41 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		91019584283EFD7C00627E41 /* SideMenuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuRowView.swift; sourceTree = "<group>"; };
+		91019586283EFD8800627E41 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
+		911076CA2836F31D002B1DCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		91BF12CA283F0349002E3CCA /* UserStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsView.swift; sourceTree = "<group>"; };
+		91BF12CC283F0C73002E3CCA /* SideMenuOptionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOptionRowView.swift; sourceTree = "<group>"; };
+		91BF12D1283F1BCE002E3CCA /* NewTweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTweetView.swift; sourceTree = "<group>"; };
+		91BF12D3283F1E31002E3CCA /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
+		91BF12D8283F2581002E3CCA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		91BF12DA283F258D002E3CCA /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		91BF12DC283F2746002E3CCA /* RoundedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShape.swift; sourceTree = "<group>"; };
+		91BF12DE283F3321002E3CCA /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
 		91DE131A28297F20002302B9 /* iTweet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTweet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91DE131D28297F20002302B9 /* iTweetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTweetApp.swift; sourceTree = "<group>"; };
 		91DE131F28297F20002302B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +59,7 @@
 		91DE134828298A9E002302B9 /* MessagesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesView.swift; sourceTree = "<group>"; };
 		91DE134C28298D29002302B9 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		91DE134E2829A2D5002302B9 /* TweetFilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetFilterViewModel.swift; sourceTree = "<group>"; };
+		91DE1353282DD20A002302B9 /* UserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +73,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9101957F283EFD0400627E41 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				91019581283EFD2200627E41 /* ViewModel */,
+				91019580283EFD1900627E41 /* View */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		91019580283EFD1900627E41 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				91019582283EFD6400627E41 /* SideMenuView.swift */,
+				91BF12CC283F0C73002E3CCA /* SideMenuOptionRowView.swift */,
+				91019584283EFD7C00627E41 /* SideMenuRowView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		91019581283EFD2200627E41 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				91019586283EFD8800627E41 /* SideMenuViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		91BF12CE283F1B9F002E3CCA /*  UploadTweet */ = {
+			isa = PBXGroup;
+			children = (
+				91BF12D0283F1BC2002E3CCA /* Views */,
+				91BF12CF283F1BB8002E3CCA /* ViewModel */,
+			);
+			path = " UploadTweet";
+			sourceTree = "<group>";
+		};
+		91BF12CF283F1BB8002E3CCA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		91BF12D0283F1BC2002E3CCA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				91BF12D1283F1BCE002E3CCA /* NewTweetView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		91BF12D5283F255A002E3CCA /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				91BF12D7283F256E002E3CCA /* ViewModel */,
+				91BF12D6283F2564002E3CCA /* Views */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		91BF12D6283F2564002E3CCA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				91BF12D8283F2581002E3CCA /* LoginView.swift */,
+				91BF12DA283F258D002E3CCA /* RegistrationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		91BF12D7283F256E002E3CCA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		91DE131128297F20002302B9 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +168,7 @@
 		91DE131C28297F20002302B9 /* iTweet */ = {
 			isa = PBXGroup;
 			children = (
+				911076CA2836F31D002B1DCC /* Info.plist */,
 				91DE133328298099002302B9 /* Extensions */,
 				91DE133228298094002302B9 /* Model */,
 				91DE133128298081002302B9 /* Service */,
@@ -91,6 +193,9 @@
 			isa = PBXGroup;
 			children = (
 				91DE1334282980AB002302B9 /* Components */,
+				91BF12D5283F255A002E3CCA /* Authentication */,
+				91BF12CE283F1B9F002E3CCA /*  UploadTweet */,
+				9101957F283EFD0400627E41 /* SideMenu */,
 				91DE134328298A50002302B9 /* Profile */,
 				91DE134228298A46002302B9 /* Messages */,
 				91DE134128298A3E002302B9 /* Notifications */,
@@ -125,6 +230,7 @@
 		91DE1334282980AB002302B9 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				91DE1352282DD1E8002302B9 /* Users */,
 				91DE133A28298164002302B9 /* Tweets */,
 			);
 			path = Components;
@@ -158,6 +264,9 @@
 			isa = PBXGroup;
 			children = (
 				91DE133B282981A2002302B9 /* TweetRowView.swift */,
+				91BF12D3283F1E31002E3CCA /* TextArea.swift */,
+				91BF12DC283F2746002E3CCA /* RoundedShape.swift */,
+				91BF12DE283F3321002E3CCA /* CustomInputField.swift */,
 			);
 			path = Tweets;
 			sourceTree = "<group>";
@@ -173,7 +282,8 @@
 		91DE134028298A38002302B9 /* Explore */ = {
 			isa = PBXGroup;
 			children = (
-				91DE134428298A6E002302B9 /* ExploreView.swift */,
+				91DE1351282DD1BE002302B9 /* ViewModels */,
+				91DE1350282DD1AA002302B9 /* View */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -217,6 +327,30 @@
 				91DE134C28298D29002302B9 /* ProfileView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		91DE1350282DD1AA002302B9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				91DE134428298A6E002302B9 /* ExploreView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		91DE1351282DD1BE002302B9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		91DE1352282DD1E8002302B9 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				91DE1353282DD20A002302B9 /* UserRowView.swift */,
+				91BF12CA283F0349002E3CCA /* UserStatsView.swift */,
+			);
+			path = Users;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,13 +426,25 @@
 				91DE134928298A9E002302B9 /* MessagesView.swift in Sources */,
 				91DE134D28298D29002302B9 /* ProfileView.swift in Sources */,
 				91DE132028297F20002302B9 /* ContentView.swift in Sources */,
+				91019585283EFD7C00627E41 /* SideMenuRowView.swift in Sources */,
 				91DE133C282981A2002302B9 /* TweetRowView.swift in Sources */,
 				91DE134F2829A2D5002302B9 /* TweetFilterViewModel.swift in Sources */,
+				91BF12DF283F3321002E3CCA /* CustomInputField.swift in Sources */,
 				91DE1339282980E2002302B9 /* FeedView.swift in Sources */,
+				91BF12D4283F1E31002E3CCA /* TextArea.swift in Sources */,
+				91019583283EFD6400627E41 /* SideMenuView.swift in Sources */,
 				91DE131E28297F20002302B9 /* iTweetApp.swift in Sources */,
+				91BF12D2283F1BCE002E3CCA /* NewTweetView.swift in Sources */,
 				91DE134528298A6E002302B9 /* ExploreView.swift in Sources */,
+				91019587283EFD8800627E41 /* SideMenuViewModel.swift in Sources */,
+				91DE1354282DD20A002302B9 /* UserRowView.swift in Sources */,
+				91BF12DD283F2746002E3CCA /* RoundedShape.swift in Sources */,
+				91BF12CD283F0C73002E3CCA /* SideMenuOptionRowView.swift in Sources */,
 				91DE133F2829893C002302B9 /* MainTabView.swift in Sources */,
+				91BF12D9283F2581002E3CCA /* LoginView.swift in Sources */,
 				91DE134728298A88002302B9 /* NotificationsView.swift in Sources */,
+				91BF12CB283F0349002E3CCA /* UserStatsView.swift in Sources */,
+				91BF12DB283F258D002E3CCA /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,15 +570,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iTweet/Preview Content\"";
 				DEVELOPMENT_TEAM = R6T7FT27QA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iTweet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -444,7 +594,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -453,15 +603,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"iTweet/Preview Content\"";
 				DEVELOPMENT_TEAM = R6T7FT27QA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iTweet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -473,7 +627,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

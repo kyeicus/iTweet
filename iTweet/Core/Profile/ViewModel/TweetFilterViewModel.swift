@@ -10,6 +10,7 @@ import Foundation
 enum TweetFilterViewModel: Int, CaseIterable {
     case tweets
     case replies
+    case media
     case likes
     
     var tittle: String {
@@ -17,9 +18,11 @@ enum TweetFilterViewModel: Int, CaseIterable {
         case .tweets:
             return "Tweets"
         case .replies:
-            return "Replies"
+            return "Tweets&replies"
         case .likes:
             return "Likes"
+        case .media:
+            return "Media"
         }
     }
     

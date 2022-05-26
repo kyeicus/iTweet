@@ -11,7 +11,10 @@ import SwiftUI
 struct iTweetApp: App {
     var body: some Scene {
         WindowGroup {
-            ProfileView()
+            NavigationView{
+//                ContentView()
+                LoginView()
+            }
         }
     }
 }

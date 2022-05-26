@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct ProfileView: View {
-     
+    
     @State private var selectedFilter: TweetFilterViewModel = .tweets
+    @Environment(\.presentationMode) var mode
     @Namespace var animation
     
     
@@ -25,7 +26,6 @@ struct ProfileView: View {
             tweetFilterBar
             
             tweetRow
-            
             
             Spacer()
         }
@@ -46,7 +46,7 @@ extension ProfileView {
             
             VStack {
                 Button {
-                    
+                    mode.wrappedValue.dismiss()
                 } label: {
                     Image(systemName: "arrow.left")
                         .resizable()
@@ -114,25 +114,8 @@ extension ProfileView {
             .font(.caption)
             .foregroundColor(.gray)
             
-            HStack(spacing: 24) {
-                HStack (spacing: 4) {
-                    Text("20K")
-                        .font(.subheadline)
-                        .bold()
-                    Text("following")
-                        .font(.caption)
-                        .foregroundColor(.gray)
-                }
-                HStack(spacing: 4) {
-                    Text ("1.5M")
-                        .font(.subheadline)
-                        .bold()
-                    Text("Followers")
-                        .font(.caption)
-                        .foregroundColor(.gray)
-                }
-            }
-            .padding(.vertical)
+            UserStatsView()
+                .padding(.vertical)
         }
         .padding(.horizontal)
     }
@@ -143,6 +126,7 @@ extension ProfileView {
             ForEach(TweetFilterViewModel.allCases, id: \.rawValue) { item in
                 VStack {
                     Text (item.tittle)
+                        .font(Font.system(size: 12))
                         .font(.subheadline)
                         .fontWeight(selectedFilter == item ? .semibold: .regular)
                         .foregroundColor(selectedFilter == item ? .black : .gray)
