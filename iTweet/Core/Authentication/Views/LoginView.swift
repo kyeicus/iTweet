@@ -10,26 +10,11 @@ import SwiftUI
 struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
+    @EnvironmentObject var viewModel: AuthViewModel
+    
     var body: some View {
         VStack {
-            VStack(alignment: .center) {
-                HStack { Spacer () }
-                Image("tweet")
-                    .resizable()
-                    .renderingMode(.template)
-                    .foregroundColor(.white)
-                    .frame(width: 80, height: 70, alignment: .center)
-                    
-                
-                Text("Sign In")
-                    .font(.largeTitle)
-                    .fontWeight(.semibold)
-            }
-            .frame( height: 260)
-            .padding(.leading)
-            .background(Color(.systemBlue))
-            .foregroundColor(.white)
-            .clipShape(RoundedShape(corners: .bottomRight))
+            AuthHeaderView(logo: "tweet", title: "Sign In")
             
             VStack(spacing: 40) {
                 CustomInputField(imageName: "envelope", placeholderText: "Email", text: $email)
@@ -55,7 +40,7 @@ struct LoginView: View {
             }
             
             Button  {
-                print("sign in ")
+                viewModel.login(withEmail: email, password: password)
             } label: {
                 Text("Sign In")
                     .font(.headline)
@@ -94,5 +79,6 @@ struct LoginView: View {
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView()
+            .preferredColorScheme(.dark)
     }
 }
