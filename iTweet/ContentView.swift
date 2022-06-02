@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct ContentView: View {
     @State private var showMenu = false
@@ -57,15 +58,20 @@ extension ContentView {
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
-                Button {
-                    withAnimation(.easeInOut) {
-                        showMenu.toggle()
+                if let user = viewModel.currentUser{
+                    Button {
+                        withAnimation(.easeInOut) {
+                            showMenu.toggle()
+                        }
+                    } label: {
+                        
+                        KFImage(URL(string: user.profileImageUrl))
+                            .resizable()
+                            .scaledToFill()
+                            .clipShape(Circle())
+                            .frame(width: 32, height: 32)
                     }
-                } label: {
-                    Circle()
-                        .frame(width: 32, height: 32)
-                }
-                
+                } 
             }
         }
         .onAppear {

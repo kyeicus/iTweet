@@ -17,18 +17,25 @@ struct LoginView: View {
             AuthHeaderView(logo: "tweet", title: "Sign In")
             
             VStack(spacing: 40) {
-                CustomInputField(imageName: "envelope", placeholderText: "Email", text: $email)
+                CustomInputField(imageName: "envelope",
+                                 placeholderText: "Email",
+                                 text: $email)
+                .keyboardType(.emailAddress)
+                .textContentType(.emailAddress)
                 
-                CustomInputField(imageName: "lock", placeholderText: "Password", text: $password)
+                CustomInputField(imageName: "lock",
+                                 placeholderText: "Password",
+                                 isSecureField: true,
+                                 text: $password)
+                .textContentType(.password)
             }
             .padding(.horizontal ,32)
             .padding(.top, 44)
             
             HStack {
                 Spacer()
-                
                 NavigationLink  {
-                    
+                    Text("Rest Password Pass under construction")
                 } label: {
                     Text("Forgot password?")
                         .font(.caption)
@@ -38,7 +45,6 @@ struct LoginView: View {
                         .padding(.trailing, 24)
                 }
             }
-            
             Button  {
                 viewModel.login(withEmail: email, password: password)
             } label: {
@@ -52,7 +58,7 @@ struct LoginView: View {
             }
             .shadow(color: .gray.opacity(0.5), radius: 10, x: 0, y: 0)
             
-            
+                        
             Spacer ()
             
             NavigationLink {

@@ -16,8 +16,6 @@ struct iTweetApp: App {
     init() {
         FirebaseApp.configure()
     }
-    
-    
     var body: some Scene {
         WindowGroup {
             NavigationView{
@@ -25,5 +23,5 @@ struct iTweetApp: App {
             }
             .environmentObject(viewModel)
         }
-    }
+    } 
 }
