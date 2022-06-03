@@ -13,10 +13,10 @@ struct ProfileView: View {
     @State private var selectedFilter: TweetFilterViewModel = .tweets
     @Environment(\.presentationMode) var mode
     @Namespace var animation
-    private let user: User
+    @ObservedObject var viewModel: ProfileViewModel
     
     init(user: User) {
-        self.user = user
+        self.viewModel = ProfileViewModel(user: user)
     }
     
     var body: some View {
@@ -61,7 +61,7 @@ extension ProfileView {
                         .offset(x: 15, y: -4)
                 }
                 
-                KFImage(URL(string: user.profileImageUrl))
+                KFImage(URL(string: viewModel.user.profileImageUrl))
                     .resizable()
                     .scaledToFill()
                     .clipShape(Circle())
@@ -82,7 +82,7 @@ extension ProfileView {
             Button {
                 
             } label: {
-                Text("Edit Profile")
+                Text(viewModel.actionButtonTitle)
                     .font(.subheadline).bold()
                     .frame(width: 120, height: 32)
                     .overlay(RoundedRectangle(cornerRadius: 20).stroke(Color.gray, lineWidth: 0.75))
@@ -94,12 +94,12 @@ extension ProfileView {
     var userInfoDetails: some View {
         VStack (alignment: .leading, spacing: 4) {
             HStack {
-                Text("\(user.FirstName) \(user.Lastname)")
+                Text("\(viewModel.user.FirstName) \(viewModel.user.Lastname)")
                     .font(.title2.bold())
                 Image(systemName: "checkmark.seal.fill")
                     .foregroundColor(.blue)
             }
-            Text("@\(user.username)")
+            Text("@\( viewModel.user.username)")
                 .font(.subheadline)
                 .foregroundColor(.gray)
             
@@ -163,8 +163,8 @@ extension ProfileView {
         
         ScrollView {
             LazyVStack {
-                ForEach (0 ... 9, id: \.self) { _ in
-                    TweetRowView()
+                ForEach (viewModel.tweets(forFilter: self.selectedFilter  )) { tweets in
+                    TweetRowView(tweet: tweets)
                         .padding()
                 }
             }
