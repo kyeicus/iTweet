@@ -15,14 +15,12 @@ struct LoginView: View {
     var body: some View {
         VStack {
             AuthHeaderView(logo: "tweet", title: "Sign In")
-            
             VStack(spacing: 40) {
                 CustomInputField(imageName: "envelope",
                                  placeholderText: "Email",
                                  text: $email)
                 .keyboardType(.emailAddress)
                 .textContentType(.emailAddress)
-                
                 CustomInputField(imageName: "lock",
                                  placeholderText: "Password",
                                  isSecureField: true,
@@ -31,7 +29,6 @@ struct LoginView: View {
             }
             .padding(.horizontal ,32)
             .padding(.top, 44)
-            
             HStack {
                 Spacer()
                 NavigationLink  {
@@ -47,18 +44,17 @@ struct LoginView: View {
             }
             Button  {
                 viewModel.login(withEmail: email, password: password)
-            } label: {
-                Text("Sign In")
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .frame(width: 340, height: 50)
-                    .background(Color(.systemBlue))
-                    .clipShape(Capsule())
-                    .padding()
             }
-            .shadow(color: .gray.opacity(0.5), radius: 10, x: 0, y: 0)
-            
-                        
+        label: {
+            Text("Sign In")
+                .font(.headline)
+                .foregroundColor(.white)
+                .frame(width: 340, height: 50)
+                .background(Color(.systemBlue))
+                .clipShape(Capsule())
+                .padding()
+        }
+        .shadow(color: .gray.opacity(0.5), radius: 10, x: 0, y: 0)
             Spacer ()
             
             NavigationLink {

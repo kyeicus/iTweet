@@ -23,5 +23,5 @@ struct iTweetApp: App {
             }
             .environmentObject(viewModel)
         }
-    } 
+    }
 }

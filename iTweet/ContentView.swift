@@ -14,11 +14,9 @@ struct ContentView: View {
     
     var body: some View {
         Group {
-            
             if viewModel.userSession == nil {
                 LoginView()
             } else {
-                
                 mainInterfaceView
             }
         }
@@ -48,13 +46,11 @@ extension ContentView {
                 }
                 .ignoresSafeArea()
             }
-            
             SideMenuView()
                 .frame(width: 300)
                 .offset(x: showMenu ? 0 : -300, y: 0)
                 .background(showMenu ? Color.white : Color.clear)
         }
-        .navigationTitle("Home")
         .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
@@ -64,14 +60,13 @@ extension ContentView {
                             showMenu.toggle()
                         }
                     } label: {
-                        
                         KFImage(URL(string: user.profileImageUrl))
                             .resizable()
                             .scaledToFill()
                             .clipShape(Circle())
                             .frame(width: 32, height: 32)
                     }
-                } 
+                }
             }
         }
         .onAppear {

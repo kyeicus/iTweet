@@ -8,13 +8,12 @@
 import SwiftUI
 
 struct AuthHeaderView: View {
-    
     let logo : String
     let title : String
     var body: some View {
         VStack(alignment: .center) {
             HStack { Spacer () }
-            Image(logo) 
+            Image(logo)
                 .resizable()
                 .renderingMode(.template)
                 .foregroundColor(.white)
