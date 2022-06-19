@@ -25,5 +25,4 @@ enum TweetFilterViewModel: Int, CaseIterable {
             return "Media"
         }
     }
-    
 }

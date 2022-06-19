@@ -49,9 +49,8 @@ extension ContentView {
             SideMenuView()
                 .frame(width: 300)
                 .offset(x: showMenu ? 0 : -300, y: 0)
-                .background(showMenu ? Color.white : Color.clear)
+                .background(showMenu ? Color(.systemBackground) : Color.clear)
         }
-        .navigationBarTitleDisplayMode(.inline)
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 if let user = viewModel.currentUser{
@@ -67,6 +66,10 @@ extension ContentView {
                             .frame(width: 32, height: 32)
                     }
                 }
+            }
+            ToolbarItem(placement: .principal) {
+                Text("iTweet")
+                    .foregroundColor(.blue)
             }
         }
         .onAppear {

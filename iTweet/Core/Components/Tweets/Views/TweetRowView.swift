@@ -7,6 +7,8 @@
 
 import SwiftUI
 import Kingfisher
+import FirebaseFirestoreSwift
+
 
 struct TweetRowView: View {
     @ObservedObject var viewModel : TweetRowViewModel
@@ -32,7 +34,7 @@ struct TweetRowView: View {
                                 Text("\(user.FirstName) \(user.Lastname)")
                                     .font(.subheadline).bold()
                                 
-                                Text("\(user.username)")
+                                Text("@\(user.username)")
                                     .foregroundColor(.gray)
                                     .font(.caption)
                                 
@@ -46,45 +48,47 @@ struct TweetRowView: View {
                         Text(viewModel.tweet.caption)
                             .font(.subheadline)
                             .multilineTextAlignment(.leading)
+                        
+                        HStack {
+                            Button {
+                                
+                            } label: {
+                                Image(systemName: "bubble.left")
+                                    .font(.subheadline)
+                            }
+                            Spacer()
+                            Button {
+                                
+                            } label: {
+                                Image(systemName: "arrow.2.squarepath")
+                                    .font(.subheadline)
+                            }
+                            Spacer()
+                            Button {
+                                viewModel.tweet.didLike ?? false ?
+                                viewModel.unLikeTweet() :
+                                viewModel.likeTweet()
+                            } label: {
+                                Image(systemName: viewModel.tweet.didLike ?? false ? "heart.fill" : "heart")
+                                    .font(.subheadline)
+                                    .foregroundColor(viewModel.tweet.didLike ?? false ? .red : .gray )
+                            }
+                            Spacer()
+                            Button {
+                                
+                            } label: {
+                                Image(systemName: "bookmark")
+                                    .font(.subheadline)
+                            }
+                            
+                        }
+                        .padding()
+                        .foregroundColor(.gray)
                     }
                 }
             }
             
-            HStack {
-                Button {
-                    
-                } label: {
-                    Image(systemName: "bubble.left")
-                        .font(.subheadline)
-                }
-                Spacer()
-                Button {
-                    
-                } label: {
-                    Image(systemName: "arrow.2.squarepath")
-                        .font(.subheadline)
-                }
-                Spacer()
-                Button {
-                    viewModel.tweet.didLike ?? false ?
-                    viewModel.unLikeTweet() :
-                    viewModel.likeTweet()
-                } label: {
-                    Image(systemName: viewModel.tweet.didLike ?? false ? "heart.fill" : "heart")
-                        .font(.subheadline)
-                        .foregroundColor(viewModel.tweet.didLike ?? false ? .red : .gray )
-                }
-                Spacer()
-                Button {
-                    
-                } label: {
-                    Image(systemName: "bookmark")
-                        .font(.subheadline)
-                }
-                
-            }
-            .padding()
-            .foregroundColor(.gray)
+
             Divider()
         }
     }

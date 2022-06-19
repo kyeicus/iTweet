@@ -12,6 +12,10 @@ enum SideMenuViewModel: Int, CaseIterable {
     case lists
     case bookmarks
     case logout
+    case topic
+    case moments
+    case purchases
+    case monitization
     
     var title: String {
         switch self {
@@ -23,6 +27,14 @@ enum SideMenuViewModel: Int, CaseIterable {
             return "Bookmarks"
         case .logout:
             return "Logout"
+        case .topic:
+            return "Topic"
+        case .moments:
+            return "Moments"
+        case .purchases:
+            return "Purchases"
+        case .monitization:
+            return "Monitization"
         }
     }
     var imageName: String {
@@ -35,6 +47,14 @@ enum SideMenuViewModel: Int, CaseIterable {
             return "bookmark"
         case .logout:
             return "arrow.left.square"
+        case .topic:
+            return "text.bubble"
+        case .moments:
+            return "bolt.fill"
+        case .purchases:
+            return "cart"
+        case .monitization:
+            return "creditcard"
         }
     }
 }

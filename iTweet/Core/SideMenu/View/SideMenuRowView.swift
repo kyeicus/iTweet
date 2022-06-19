@@ -2,7 +2,7 @@
 //  SideMenuRowView.swift
 //  iTweet
 //
-//  Created by Emmanuel K. Nketia on 26/05/2022.
+//  Created by Emmanuel K. Nketia on 18/06/2022.
 //
 
 import SwiftUI

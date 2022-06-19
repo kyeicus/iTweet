@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		91019583283EFD6400627E41 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91019582283EFD6400627E41 /* SideMenuView.swift */; };
-		91019585283EFD7C00627E41 /* SideMenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91019584283EFD7C00627E41 /* SideMenuRowView.swift */; };
 		91019587283EFD8800627E41 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91019586283EFD8800627E41 /* SideMenuViewModel.swift */; };
 		911FD5A928485EFF00508C43 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911FD5A828485EFF00508C43 /* UserService.swift */; };
 		911FD5AB2848617E00508C43 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 911FD5AA2848617E00508C43 /* User.swift */; };
@@ -16,6 +15,7 @@
 		913860002841A0F900CF77ED /* ProfilePhotoSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91385FFF2841A0F800CF77ED /* ProfilePhotoSelectorView.swift */; };
 		913860032842E26B00CF77ED /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913860022842E26B00CF77ED /* ImagePicker.swift */; };
 		913860052843001F00CF77ED /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913860042843001F00CF77ED /* ImageUploader.swift */; };
+		913B6EEA285E27F4008C2A2A /* SideMenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 913B6EE9285E27F4008C2A2A /* SideMenuRowView.swift */; };
 		9142A0DE284A464200513A1B /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9142A0DD284A464200513A1B /* ProfileViewModel.swift */; };
 		9142A0E2284A523F00513A1B /* TweetRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9142A0E1284A523F00513A1B /* TweetRowViewModel.swift */; };
 		914D9B912854BFB600EA66E6 /* MessagesBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 914D9B902854BFB600EA66E6 /* MessagesBubble.swift */; };
@@ -40,6 +40,7 @@
 		91D2319528403D82005FEE90 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 91D2319428403D82005FEE90 /* FirebaseFirestore */; };
 		91D2319728403D82005FEE90 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 91D2319628403D82005FEE90 /* FirebaseFirestoreSwift */; };
 		91D2319928403D82005FEE90 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 91D2319828403D82005FEE90 /* FirebaseStorage */; };
+		91DBCA0E285E63B1004CF943 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91DBCA0D285E63B1004CF943 /* Launch Screen.storyboard */; };
 		91DE131E28297F20002302B9 /* iTweetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE131D28297F20002302B9 /* iTweetApp.swift */; };
 		91DE132028297F20002302B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE131F28297F20002302B9 /* ContentView.swift */; };
 		91DE132228297F21002302B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91DE132128297F21002302B9 /* Assets.xcassets */; };
@@ -59,7 +60,6 @@
 
 /* Begin PBXFileReference section */
 		91019582283EFD6400627E41 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
-		91019584283EFD7C00627E41 /* SideMenuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuRowView.swift; sourceTree = "<group>"; };
 		91019586283EFD8800627E41 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
 		911076CA2836F31D002B1DCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		911FD5A828485EFF00508C43 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
@@ -67,6 +67,7 @@
 		91385FFF2841A0F800CF77ED /* ProfilePhotoSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoSelectorView.swift; sourceTree = "<group>"; };
 		913860022842E26B00CF77ED /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		913860042843001F00CF77ED /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		913B6EE9285E27F4008C2A2A /* SideMenuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuRowView.swift; sourceTree = "<group>"; };
 		9142A0DD284A464200513A1B /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		9142A0E1284A523F00513A1B /* TweetRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetRowViewModel.swift; sourceTree = "<group>"; };
 		914D9B902854BFB600EA66E6 /* MessagesBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesBubble.swift; sourceTree = "<group>"; };
@@ -87,6 +88,7 @@
 		91BF12E1283F4A54002E3CCA /* AuthHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeader.swift; sourceTree = "<group>"; };
 		91D23184283FF93A005FEE90 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		91D2318F28403C81005FEE90 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		91DBCA0D285E63B1004CF943 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		91DE131A28297F20002302B9 /* iTweet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTweet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91DE131D28297F20002302B9 /* iTweetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTweetApp.swift; sourceTree = "<group>"; };
 		91DE131F28297F20002302B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -135,7 +137,7 @@
 			children = (
 				91019582283EFD6400627E41 /* SideMenuView.swift */,
 				91BF12CC283F0C73002E3CCA /* SideMenuOptionRowView.swift */,
-				91019584283EFD7C00627E41 /* SideMenuRowView.swift */,
+				913B6EE9285E27F4008C2A2A /* SideMenuRowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -281,8 +283,9 @@
 				91DE133228298094002302B9 /* Model */,
 				91DE133128298081002302B9 /* Service */,
 				91DE13302829807A002302B9 /* Core */,
-				91DE131D28297F20002302B9 /* iTweetApp.swift */,
 				91DE131F28297F20002302B9 /* ContentView.swift */,
+				91DE131D28297F20002302B9 /* iTweetApp.swift */,
+				91DBCA0D285E63B1004CF943 /* Launch Screen.storyboard */,
 				91D2318F28403C81005FEE90 /* GoogleService-Info.plist */,
 				91DE132128297F21002302B9 /* Assets.xcassets */,
 				91DE132328297F21002302B9 /* Preview Content */,
@@ -547,6 +550,7 @@
 			files = (
 				91DE132528297F21002302B9 /* Preview Assets.xcassets in Resources */,
 				91DE132228297F21002302B9 /* Assets.xcassets in Resources */,
+				91DBCA0E285E63B1004CF943 /* Launch Screen.storyboard in Resources */,
 				91D2319028403C81005FEE90 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -563,7 +567,6 @@
 				91DE134D28298D29002302B9 /* ProfileView.swift in Sources */,
 				91DE132028297F20002302B9 /* ContentView.swift in Sources */,
 				9142A0E2284A523F00513A1B /* TweetRowViewModel.swift in Sources */,
-				91019585283EFD7C00627E41 /* SideMenuRowView.swift in Sources */,
 				91BF12E2283F4A54002E3CCA /* AuthHeader.swift in Sources */,
 				914D9B992854E03500EA66E6 /* MessageTextField.swift in Sources */,
 				91DFEF5F28495EA900255373 /* ExploreViewModel.swift in Sources */,
@@ -596,6 +599,7 @@
 				913860052843001F00CF77ED /* ImageUploader.swift in Sources */,
 				916C9660284A31E200EC5C01 /* Tweet.swift in Sources */,
 				91DE134728298A88002302B9 /* NotificationsView.swift in Sources */,
+				913B6EEA285E27F4008C2A2A /* SideMenuRowView.swift in Sources */,
 				91BF12CB283F0349002E3CCA /* UserStatsView.swift in Sources */,
 				91BF12DB283F258D002E3CCA /* RegistrationView.swift in Sources */,
 			);
@@ -734,6 +738,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -745,6 +750,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyeicus.iTweet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -767,6 +775,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -778,6 +787,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kyeicus.iTweet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

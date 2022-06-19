@@ -14,12 +14,22 @@ struct SideMenuView: View {
         if let user = authViewModel.currentUser {
             VStack(alignment: .leading, spacing: 32) {
                 VStack(alignment: .leading) {
-                    KFImage(URL(string: user.profileImageUrl))
-                        .resizable()
-                        .scaledToFill()
-                        .clipShape(Circle())
-                        .frame(width: 48, height: 48)
-                    
+//                    KFImage(URL(string: user.profileImageUrl))
+                    AsyncImage(url: URL(string: user.profileImageUrl), content: { prof in
+                        prof.resizable()
+                            .scaledToFill()
+                            .clipShape(Circle())
+                            .frame(width: 48, height: 48)
+
+                    }, placeholder: {
+                        ProgressView()
+                    })
+//                    .resizable()
+//                    .scaledToFill()
+//                    .clipShape(Circle())
+//                    .frame(width: 48, height: 48)
+
+                                            
                     VStack(alignment: .leading,spacing: 4) {
                         Text("\(user.FirstName) \(user.Lastname)")
                             .font(.headline)
@@ -32,35 +42,30 @@ struct SideMenuView: View {
                         .padding(.vertical)
                 }
                 .padding(.leading)
-                
-                ForEach(SideMenuViewModel.allCases, id: \.rawValue) { viewModel in
-                    if viewModel == .profile {
-                        NavigationLink {
-                            ProfileView(user: user)
-                        } label: {
-                            SideMenuOptionRowView(viewModel: .profile)
-                        }
-                    } else if viewModel == .logout {
-                        Button {
-                            authViewModel.signOut()
+                ScrollView {
+                    ForEach(SideMenuViewModel.allCases, id: \.rawValue) { viewModel in
+                        if viewModel == .profile {
+                            NavigationLink {
+                                ProfileView(user: user)
+                            } label: {
+                                SideMenuOptionRowView(viewModel: .profile)
+                            }
+                        } else if viewModel == .logout {
+                            Button {
+                                authViewModel.signOut()
+                                
+                            } label: {
+                                SideMenuOptionRowView(viewModel: viewModel)
+                            }
                             
-                        } label: {
+                        } else {
                             SideMenuOptionRowView(viewModel: viewModel)
                         }
-                        
-                    } else {
-                        SideMenuOptionRowView(viewModel: viewModel)
                     }
+                    Spacer()
                 }
-                Spacer()
             }
         }
-
     }
 }
 
-struct SideMenuView_Previews: PreviewProvider {
-    static var previews: some View {
-        SideMenuView()
-    }
-}

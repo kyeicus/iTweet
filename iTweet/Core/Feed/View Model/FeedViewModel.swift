@@ -4,7 +4,7 @@
 //
 //  Created by Emmanuel K. Nketia on 03/06/2022.
 //
-
+import SwiftUI
 import Foundation
 
 class FeedViewModel: ObservableObject {

@@ -21,6 +21,7 @@ struct FeedView: View {
                     }
                 }
             }
+            .background(Color(.secondarySystemBackground))
             Button {
                 showNewTweetView.toggle()
             } label: {

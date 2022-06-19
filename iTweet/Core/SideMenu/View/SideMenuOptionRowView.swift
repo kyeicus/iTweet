@@ -8,21 +8,23 @@
 import SwiftUI
 
 struct SideMenuOptionRowView: View {
-    let viewModel : SideMenuViewModel 
+    let viewModel : SideMenuViewModel
     
     var body: some View {
-        HStack(spacing: 15) {
-            Image(systemName: viewModel.imageName)
-                .font(.headline)
-                .foregroundColor(.gray)
-            
-            Text(viewModel .title)
-                .font(.subheadline)
-                .foregroundColor(.black)
-            Spacer()
-        }
-        .frame(height:40)
-        .padding(.horizontal)     }
+      
+            HStack(spacing: 10) {
+                Image(systemName: viewModel.imageName)
+                    .font(.headline)
+                    .foregroundColor(.primary)
+                
+                Text(viewModel .title)
+                    .font(.subheadline)
+                    .foregroundColor(.primary)
+                Spacer()
+            }
+            .frame(height:40)
+            .padding(.horizontal)
+    }
 }
 
 struct SideMenuOptionRowView_Previews: PreviewProvider {
