@@ -57,6 +57,7 @@ struct SideMenuView: View {
                             } label: {
                                 SideMenuOptionRowView(viewModel: viewModel)
                             }
+                            .foregroundColor(.red)
                             
                         } else {
                             SideMenuOptionRowView(viewModel: viewModel)

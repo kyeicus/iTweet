@@ -11,11 +11,11 @@ enum SideMenuViewModel: Int, CaseIterable {
     case profile
     case lists
     case bookmarks
-    case logout
     case topic
     case moments
     case purchases
     case monitization
+    case logout
     
     var title: String {
         switch self {
