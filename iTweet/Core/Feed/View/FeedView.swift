@@ -19,22 +19,23 @@ struct FeedView: View {
                         TweetRowView(tweet: tweet)
                             .padding()
                     }
+                    
                 }
+            
             }
+          
             .background(Color(.secondarySystemBackground))
             Button {
                 showNewTweetView.toggle()
             } label: {
-                Image("tweet")
-                    .resizable()
-                    .renderingMode(.template)
-                    .frame(width: 28, height: 28)
+                Image(systemName: "pencil")
+                    .font(.largeTitle)
                     .padding()
             }
             .background(Color(.systemBlue))
             .foregroundColor(.white)
-            .clipShape(Circle())
-            .padding()
+            .mask(Circle ())
+            .shadow(radius: 5)
             .fullScreenCover(isPresented: $showNewTweetView) {
                 NewTweetView(viewModel: UploadTweetViewModel())
             }

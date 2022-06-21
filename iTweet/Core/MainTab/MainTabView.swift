@@ -14,6 +14,7 @@ struct MainTabView: View {
             NavigationView {
                 FeedView()
             }
+          
                 .onTapGesture {
                     self.selectedIndex = 0
                 }

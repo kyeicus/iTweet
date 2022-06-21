@@ -14,10 +14,12 @@ class UploadTweetViewModel: ObservableObject {
     
     func uploadTweet(withCaption caption: String) {
         service.uploadTweet(caption: caption) { success in
-            if success{
+            if success {
                 self.didUploadTweet = true
+                
             } else {
                 
+            
             }
         }
     }

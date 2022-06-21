@@ -7,7 +7,7 @@
 
 import Foundation
 
-class TweetRowViewModel:ObservableObject {
+class TweetRowViewModel: ObservableObject {
     @Published var tweet: Tweet
     private let service = TweetService()
     

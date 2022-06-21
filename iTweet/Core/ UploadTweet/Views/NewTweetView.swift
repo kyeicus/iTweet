@@ -53,6 +53,7 @@ struct NewTweetView: View {
         .onReceive(viewModel.$didUploadTweet) { success in
             if success {
                 presentationMode.wrappedValue.dismiss()
+                
             }
         }
         
